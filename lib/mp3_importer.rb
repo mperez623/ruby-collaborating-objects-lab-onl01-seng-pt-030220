@@ -14,7 +14,10 @@ class MP3Importer
   end
   
   def import
-     Song.new_by_filename
+     song_name = file.split(" - ")[1]
+    artist = file.split(" - ")[0]
+    song = Song.new(song_name)
+    song.artist_name = artist
+    song
   end
-  end
-  
+end
