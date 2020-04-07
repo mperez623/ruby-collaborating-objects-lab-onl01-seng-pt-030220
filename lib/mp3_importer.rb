@@ -14,7 +14,7 @@ class MP3Importer
   end
   
   def import
-    Song.new_by_filename(@path)
+    Song.new_by_filename(files).at_least(4).times
   end
   
   
