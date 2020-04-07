@@ -10,7 +10,7 @@ class MP3Importer
   
   
   def files
-    file_names = Dir.children("*.mp3")
+    file_names = Dir.children("")
     binding.pry
   end
   
