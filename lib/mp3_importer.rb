@@ -13,7 +13,7 @@ class MP3Importer
     file_names = Dir.children(@path)
   end
   
-  def import(files)
+  def import
     Song.new_by_filename(files)
   end
   
