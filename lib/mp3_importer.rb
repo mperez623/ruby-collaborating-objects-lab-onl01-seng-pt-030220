@@ -13,9 +13,9 @@ class MP3Importer
     file_names = Dir.children(@path)
   end
   
-  # def import
+  def import
     
-  # end
+  end
   
   
   
